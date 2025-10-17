@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-100;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply container;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .section-dark {
+    @apply bg-slate-900;
+  }
+
+  .section-muted {
+    @apply bg-slate-800;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-white mb-12 text-center;
+  }
+
+  .card {
+    @apply bg-slate-800 p-6 rounded-xl shadow-lg;
+  }
+
+  .card-dark {
+    @apply bg-slate-900 rounded-xl overflow-hidden shadow-lg;
+  }
+
+  .card-hover {
+    @apply hover:shadow-blue-500/10 transition-all hover:-translate-y-2;
+  }
+
+  .btn {
+    @apply px-8 py-3 rounded-lg font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-500 shadow-lg hover:shadow-brand-500/50;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 text-white hover:bg-slate-600;
+  }
+
+  .chip {
+    @apply px-3 py-1 bg-slate-800 text-brand-400 text-sm rounded-full border border-brand-500/30;
+  }
+
+  .tile {
+    @apply flex flex-col items-center gap-3 p-6 bg-slate-700 rounded-lg hover:bg-slate-600 transition-colors;
+  }
+
+  .icon-accent {
+    @apply text-brand-400 group-hover:scale-110 transition-transform;
+  }
+
+  .badge {
+    @apply bg-brand-600 text-white text-xs font-semibold px-3 py-1 text-center;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .animate-fade-in-delay-1 {
+    animation: fadeIn 1s ease-in 0.2s both;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-in 0.4s both;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 1s ease-in 0.6s both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
