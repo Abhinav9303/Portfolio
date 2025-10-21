@@ -9,21 +9,22 @@ export default function Projects() {
       github: '#',
       live: '#',
       featured: true,
+      // isPersonal: true,
     },
     {
       title: 'Logistics Control Tower',
       description: 'Enterprise application for managing and monitoring logistics operations in real-time. Provides visibility and control over supply chain processes.',
       technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-      github: '#',
-      live: '#',
-      featured: true,
+      // github: '#',
+      // live: '#',
+      featured: false,
     },
     {
       title: 'Yard Management App',
       description: 'Application for optimizing yard operations, including dock scheduling, trailer tracking, and resource allocation.',
       technologies: ['React', 'Express', 'MongoDB', 'Docker'],
-      github: '#',
-      live: '#',
+      // github: '#',
+      // live: '#',
       featured: false,
     },
   ];
@@ -55,7 +56,7 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
+                { project.isPersonal && <div className="flex gap-4">
                   <a
                     href={project.github}
                     className="flex items-center gap-2 text-gray-300 hover:text-brand-400 transition-colors"
@@ -70,7 +71,7 @@ export default function Projects() {
                     <ExternalLink size={18} />
                     <span className="text-sm">Live Demo</span>
                   </a>
-                </div>
+                </div>}
               </div>
             </div>
           ))}

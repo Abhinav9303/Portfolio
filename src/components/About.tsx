@@ -27,7 +27,7 @@ export default function About() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Experience</h3>
                 <p className="text-gray-300">
-                  Over the past six months, I've focused on resolving bug tickets, maintaining systems,
+                  Over the past 2 Years, I've focused on making new projects, resolving bugs, maintaining systems,
                   and ensuring production stability. I've gained valuable experience in debugging and
                   system reliability.
                 </p>
