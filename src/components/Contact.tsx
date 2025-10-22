@@ -14,7 +14,7 @@ export default function Contact() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <a href="mailto:your.email@example.com" className="tile group">
+            <a href={`mailto:${contacts?.email}`} className="tile group">
               <Mail className="icon-accent" size={32} />
               <span className="text-white font-medium">Email</span>
               <span className="text-gray-400 text-sm text-center">{contacts?.email}</span>

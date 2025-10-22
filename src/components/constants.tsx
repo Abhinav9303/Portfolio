@@ -1,5 +1,5 @@
 export const contacts = {
-    email: 'abhinav.srdn@gmail.com',
+    email: 'abhinavsrdn@gmail.com',
     linkedin: 'https://www.linkedin.com/in/abhinav-sardana-041a15221/',
     github: 'https://github.com/Abhinav9303/'
 }
